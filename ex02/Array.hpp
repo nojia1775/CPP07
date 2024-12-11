@@ -8,8 +8,8 @@ template <typename T>
 class	Array
 {
 	private:
-		T	*_arr;
 		size_t	_size;
+		T	*_arr;
 
 	public:
 			Array(void);
