@@ -54,7 +54,7 @@ T&	Array<T>::operator[](unsigned int index)
 }
 
 template <typename T>
-size_t	Array<T>::size(void) const
+unsigned int	Array<T>::size(void) const
 {
 	return _size;
 }
