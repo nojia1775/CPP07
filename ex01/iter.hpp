@@ -3,18 +3,13 @@
 # define ITER_HPP
 
 # include <iostream>
+# include <cctype>
 
-template <typename T>
-void	iter(T *tab, size_t size, void (*f)(T))
+template <typename T, typename F>
+void	iter(T *tab, size_t size, F f)
 {
 	for (size_t i = 0 ; i < size ; i++)
 		f(tab[i]);
-}
-
-template <typename T>
-void	aff(T c)
-{
-	std::cout << c;
 }
 
 #endif
